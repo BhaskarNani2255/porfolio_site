@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&family=Roboto:wght@300&family=Sassy+Frass&display=swap");
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Sassy Frass', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* nav bar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 1.5rem 10%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 10px black;
+  background: white;
+}
+
+.logo {
+  color: black;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  margin-left: 2.8rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: black;
+  transition: 0.2s;
+}
+
+.nav-bar a:hover {
+  color: #fd940f;
+}
+
+/* main home  */
+main .home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 6rem;
+  padding: 70px 10% 0;
+}
+
+
+.home .home-container-1
+{
+  animation: home-container-animate 1.3s ease-out ;
+}
+
+@keyframes home-container-animate {
+  from{
+   transform: translate(-500px);
+ }  
+}
+
+
+.home-container-1 h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.home-container-1 h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  font-family: emoji;
+  color: #fd940f;
+ 
+}
+
+
+.hc1-desc {
+  font-size: 19px;
+  width: 508px;
+  line-height: 35px;
+}
+
+.profile-pic {
+  width: 43rem;
+  height: 36rem;
+  animation: profile-pic 1s ease-in ;
+}
+
+@keyframes profile-pic {
+from 
+{
+  transform: scale(.98);
+  opacity: 0;
+}
+to 
+{
+  opacity: 1;
+}
+}
+
+/* -------------------------------------------------------------------- */
+
+/* about */
+
+.about-container {
+  padding: 1rem 10% 0 10%;
+  background: #000;
+}
+
+.about-container-1,
+.skills-container-1,
+.contact-container-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .about-image1 img
+{
+    height: 5rem;
+} */
+
+.about,
+.skills ,
+.contact{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fd940f;
+  text-transform: capitalize;
+  justify-self: flex-start;
+  margin: 4.5rem 0 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+.line-ac2,
+.line-sc2 ,
+.line-cc3
+{
+  width: 90px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background: gray;
+  border: 2px solid gray;
+}
+.about-matter,
+.skills-matter,
+.contact-section {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  width: 32rem;
+  align-self: flex-start;
+  text-align: justify;
+}
+
+*::selection {
+  color: black;
+  background-color: rgb(13, 255, 0);
+}
+
+/* -------------------------------------------------------------------- */
+
+/* skills  */
+
+/* skills-container-1 , skills-matter, skills are having same property of about*/
+.skills-container {
+  padding: 1rem 10% 2rem 10%;
+}
+.line-sc2 {
+  width: 80px;
+  margin-bottom: 2.5rem;
+}
+
+.skills-matter {
+  color: black;
+}
+
+.progress-bars h3 {
+  font-size: 1.2rem;
+}
+
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6 {
+  background-color: transparent;
+  border: 1px solid gray;
+  width: 28rem;
+  height: 1rem;
+  border-radius: 50px;
+  margin: 0.8rem 0 1rem 0;
+}
+
+.pb1,
+.pb2,
+.pb3,
+.pb4,
+.pb5,
+.pb6 {
+  font-size: 15px;
+  text-align: center;
+  /* background-color: rgb(13, 255, 0); */
+  background-color: rgb(255, 170, 0);
+  width: 50%;
+  height: 100%;
+  transition: 0.5s;
+  animation: progress1 5s ease-in forwards;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+@keyframes progress1 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+.pb2 {
+  animation-name: progress2;
+}
+
+@keyframes progress2 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+.pb3 {
+  animation-name: progress3;
+}
+
+@keyframes progress3 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+.pb4 {
+  animation-name: progress4;
+}
+
+@keyframes progress4 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+.pb5 {
+  animation-name: progress5;
+}
+
+@keyframes progress5 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+.pb6 {
+  animation-name: progress6;
+}
+
+@keyframes progress6 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+.skills-image1
+{
+    margin-top: 6.5rem;
+}
+
+
+/* ---------------------------------------------------- */
+/* contact */
+.contact-container
+{    
+    background: black;
+    padding: 0.2rem 2rem 2rem 2rem;
+}
+
+
+.contact-heading{
+  margin-left: 7.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact
+{
+  margin-top: 2rem;
+}
+
+
+.line-cc3
+{
+    width: 119px;
+}
+
+
+.resume
+{
+  text-decoration: none;
+  color: white;
+  border: 1px solid gray;
+  padding: 15px 63px;
+  font-size: 2.01rem;
+  transition: all 0.5;
+  box-shadow: 0 0 10px white;
+  border-radius: 12px;
+}
+
+.resume:hover
+{
+ border-radius: 12px;
+ color: #000;
+ background-color: #fd940f;
+ border:1px solid black ;
+ font-weight: bolder;
+}
+
+.social-media {
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-left: 36px;
+}
